@@ -1,0 +1,58 @@
+-düğüm 1
+Public address of the key:   0xC73113d574458D10Ea55A3ae7d1687E81e863459
+Path of the secret key file: veri\keystore\UTC--2022-08-30T21-30-09.684073000Z--c73113d574458d10ea55a3ae7d1687e81e863459
+    pass: 123123
+    geth --networkid 14555 --datadir "./veri" --bootnodes enode://00796dafa69405adaf93173f174cec3dabb89ddcd6026cc4f0b454b331ecd664555f0796afe6887ffa2a23a362f85c1baec47fee32781cb123326d50cb41df49@127.0.0.1:0?discport=30301 --port 30303 --ipcdisable --syncmode full --allow-insecure-unlock --unlock 0xC73113d574458D10Ea55A3ae7d1687E81e863459 --password pass.txt --mine console --authrpc.port 8551 attach veri/signer.ipc --exec admin.peers
+
+clique.propose("0x7CD1dbd776F1a94A2545cc5b5aCaBe71bd8Bfc97", true)
+
+-düğüm 2
+Public address of the key:   0x59aab93b9dD90B30A82D9Bff3619170657De460c
+Path of the secret key file: veri\keystore\UTC--2022-08-30T21-30-36.991795900Z--59aab93b9dd90b30a82d9bff3619170657de460c
+    pass : 123123
+    geth --networkid 14555 --datadir "./veri" --bootnodes enode://00796dafa69405adaf93173f174cec3dabb89ddcd6026cc4f0b454b331ecd664555f0796afe6887ffa2a23a362f85c1baec47fee32781cb123326d50cb41df49@127.0.0.1:0?discport=30301 --port 30304 --ipcdisable --syncmode full --allow-insecure-unlock --unlock 0x59aab93b9dD90B30A82D9Bff3619170657De460c --password pass.txt --mine console --authrpc.port 8552
+clique.propose("0x6fCc831558D33669c2E425C0b30091f0781da3f0", true)
+
+
+
+
+
+$ geth --datadir server/data --networkid 56821 --nodiscover --identity server --lightserv 75 --lightpeers 10 --minerthreads 1 -rpc --rpcapi "db,eth,net,web3,personal,admin,txpool" --rpcport 8485 --rpcaddr "0.0.0.0" --rpccorsdomain "*" --port 30303 --v5disc  --unlock "726794b16f6c5b0be0b78d7713a876ed3da8be1a" console
+$ geth --datadir miner2/data --networkid 56821 --nodiscover --identity miner2 --minerthreads 1 -rpc --rpcapi "db,eth,net,web3,personal,admin,txpool" --rpcport 8487 --rpcaddr "0.0.0.0" --rpccorsdomain "*" --port 30305 --unlock "c077f8420d5b6c125897d9c5e21293ff6f77855c" console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-düğüm 3
+    Public address of the key:   0xc051Cc40a0f00DDB6586cA30B01B954DCfa29C79
+    Path of the secret key file: veri\keystore\UTC--2022-08-30T19-52-38.294820600Z--c051cc40a0f00ddb6586ca30b01b954dcfa29c79
+    pass : 123qwe
+    geth --networkid 14555 --datadir "./veri" --bootnodes enode://00796dafa69405adaf93173f174cec3dabb89ddcd6026cc4f0b454b331ecd664555f0796afe6887ffa2a23a362f85c1baec47fee32781cb123326d50cb41df49@127.0.0.1:0?discport=30301 --port 30305 --ipcdisable --syncmode full --authrpc.port 8553 --unlock 0xc051Cc40a0f00DDB6586cA30B01B954DCfa29C79 --password pass.txt --mine console 
+
+
+
+
+
+
+
+-bootnode
+    enode://00796dafa69405adaf93173f174cec3dabb89ddcd6026cc4f0b454b331ecd664555f0796afe6887ffa2a23a362f85c1baec47fee32781cb123326d50cb41df49@127.0.0.1:0?discport=30301
+    bootnode -nodekey "./boot.key" -verbosity 7 -addr "127.0.0.1:30301"
+
+
+
+
